@@ -1,3 +1,4 @@
+/* This css area is for the background and headings */
 body{
     border-width: 20px;
     border-style:double;
@@ -8,13 +9,6 @@ body{
     background-color: #a0a0b0;
 }
 
-p1{
-        display: flex;
-        position: relative;
-        margin-left: 30rem;
-        margin-right: 30rem;
-    }
-
 h1 {
     display: flex;
     position: relative;
@@ -23,6 +17,16 @@ h1 {
     color: #000000;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/* This css area is for the text style and image placement */
+p1{
+        display: flex;
+        position: relative;
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+
+
 
 p2 {
     display: flex;
