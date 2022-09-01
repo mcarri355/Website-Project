@@ -46,10 +46,9 @@ p3{
 p4 {
     display: flex;
     position: relative;
-    margin-left: 50rem;
-    margin-right: 4rem;
-    margin-bottom: 2rem;
+    right: 0;
     color: #000000;
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 36rem;
 }
