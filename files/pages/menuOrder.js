@@ -1,10 +1,10 @@
-var tortilla = 0
-var cheese = 0
-var meat = 0
-var veggie = 0
-var veggie2 = 0
-var guac = 0
-var sauce = 0
+var tortilla = "flour"
+var cheese = "cheddar"
+var meat = "chicken"
+var veggie1 = "tomato"
+var veggie2 = "lettuce"
+var guac = "no guacamole"
+var sauce = "medium sauce"
 
 function tortillaPick(){
     tortilla = prompt(`Pick your tortilla.
@@ -16,7 +16,7 @@ function tortillaPick(){
     }else if(tortilla == 2){
         tortilla = "corn"
     }else if(tortilla == 3){
-        tortilla = "none"
+        tortilla = "no"
     }else{
         alert("Not a valid option")
         tortillaPick()
@@ -24,7 +24,7 @@ function tortillaPick(){
 }
 
 function cheesePick(){
-    tortilla = prompt(`Pick your cheese.
+    cheese = prompt(`Pick your cheese.
     1. cheddar
     2. mozzarella
     3. american
@@ -39,7 +39,7 @@ function cheesePick(){
     }else if(cheese == 4){
         cheese = "colby jack"
     }else if(cheese == 5){
-        cheese = "none"
+        cheese = "no"
     }else{
         alert("Not a valid option")
         cheesePick()
@@ -47,7 +47,7 @@ function cheesePick(){
 }
 
 function meatPick(){
-    tortilla = prompt(`Pick your meat.
+    meat = prompt(`Pick your meat.
     1. chicken
     2. steak
     3. chorizo
@@ -62,30 +62,30 @@ function meatPick(){
     }else if(meat == 4){
         meat = "pork"
     }else if(meat == 5){
-        meat = "none"
+        meat = "no meat"
     }else{
         alert("Not a valid option")
         meatPick()
     }
 }
 
-function veggiePick(){
-    tortilla = prompt(`Pick your first vegetable.
+function veggie1Pick(){
+    veggie1 = prompt(`Pick your first vegetable.
     1. lettuce
     2. tomato
     3. olives
     4. potato
     5. none`)
-    if(veggie == 1 ){
-        veggie = "lettuce"
-    }else if(veggie == 2){
-        veggie = "steak"
-    }else if(veggie == 3){
-        veggie = "chorizo"
-    }else if(veggie == 4){
-        veggie = "pork"
-    }else if(veggie == 5){
-        veggie = "none"
+    if(veggie1 == 1 ){
+        veggie1 = "lettuce"
+    }else if(veggie1 == 2){
+        veggie1 = "tomatos"
+    }else if(veggie1 == 3){
+        veggie1 = "olives"
+    }else if(veggie1 == 4){
+        veggie1 = "potato"
+    }else if(veggie1 == 5){
+        veggie1 = "no veggies"
     }else{
         alert("Not a valid option")
         veggiePick()
@@ -93,7 +93,7 @@ function veggiePick(){
 }
 
 function veggie2Pick(){
-    tortilla = prompt(`Pick your second vegetable.
+    veggie2 = prompt(`Pick your second vegetable.
     1. lettuce
     2. tomato
     3. olives
@@ -102,13 +102,13 @@ function veggie2Pick(){
     if(veggie2 == 1 ){
         veggie2 = "lettuce"
     }else if(veggie2 == 2){
-        veggie2 = "steak"
+        veggie2 = "tomatos"
     }else if(veggie2 == 3){
-        veggie2 = "chorizo"
+        veggie2 = "olives"
     }else if(veggie2 == 4){
-        veggie2 = "pork"
+        veggie2 = "potato"
     }else if(veggie2 == 5){
-        veggie2 = "none"
+        veggie2 = "also no veggies"
     }else{
         alert("Not a valid option")
         veggie2Pick()
@@ -116,13 +116,13 @@ function veggie2Pick(){
 }
 
 function guacPick(){
-    tortilla = prompt(`Do you want guacamole?
+    guac = prompt(`Do you want guacamole?
     1. guacamole
     2. none`)
     if(guac == 1 ){
-        guac = "lettuce"
+        guac = "guacamole"
     }else if(guac == 2){
-        guac = "steak"
+        guac = "no guacamole"
     }else{
         alert("Not a valid option")
         guacPick()
@@ -130,23 +130,25 @@ function guacPick(){
 }
 
 function saucePick(){
-    tortilla = prompt(`What sauce do you want?
+    sauce = prompt(`What sauce do you want?
     1. medium sauce
     2. mild sauce
     3. hot sauce
-    5. none`)
+    4. none`)
     if(sauce == 1 ){
-        sauce = "lettuce"
+        sauce = "medium"
     }else if(sauce == 2){
-        sauce = "steak"
+        sauce = "mild"
     }else if(sauce == 3){
-        sauce = "chorizo"
+        sauce = "hot"
     }else if(sauce == 4){
-        sauce = "pork"
+        sauce = "no sauce"
     }else{
         alert("Not a valid option")
         saucePick()
     }
 }
 
-
+function orderOrdered(){
+    alert("HOORAY! You have ordered a burrito with " + tortilla + " tortilla, " + cheese + " cheese, " + meat + ", " + veggie1 + " and " + veggie2 + ", " + guac + ", and " + sauce + ".")
+}

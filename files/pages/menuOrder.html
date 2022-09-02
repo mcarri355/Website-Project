@@ -1,19 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bernard's Menu</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<input type="button" value="Order tortilla" onclick="tortillaPick()"/>
-<input type="button" value="Order cheese" onclick="cheesePick()" />
-<input type="button" value="Order meat" onclick="meatPick()" />
-<input type="button" value="Order vegetable 1" onclick="veggiePick()" />
-<input type="button" value="Order vegetable 2" onclick="veggie2Pick()" />
-<input type="button" value="Order guacamole" onclick="guacPick()" />
-<input type="button" value="Order sauce" onclick="saucePick()" />
+    <p1><img class="displayed" src="../images/logo.png" alt="Bernard's Burrito logo" width="300" height="150"></p1>
+    <h1>Bernard's Burritos Menu</h1>
+    <button><a href="menu.html">Back to Menu</a></button>
+<p2>
+    <input type="button" value="Order tortilla" onclick="tortillaPick()"/>
+    <br><br>
+</p2>
+</p2>
+<p2>
+    <input type="button" value="Order cheese" onclick="cheesePick()" />
+    <br><br>
+</p2>
+<p2>
+    <input type="button" value="Order meat" onclick="meatPick()" />
+    <br><br>
+</p2>
+<p2>
+    <input type="button" value="Order vegetable 1" onclick="veggie1Pick()" />
+    <br><br>
+</p2>
+<p2>
+    <input type="button" value="Order vegetable 2" onclick="veggie2Pick()" />
+    <br><br>
+</p2>
+<p2>
+    <input type="button" value="Order guacamole" onclick="guacPick()" />
+    <br><br>
+</p2>
+<p2>
+    <input type="button" value="Order sauce" onclick="saucePick()" />
+    <br><br>
+</p2>
+<p2>
+    <input type="button" value="Finish Order" onclick="orderOrdered()" />
+    <br><br>
+</p2>
+    <script src="menuOrder.js"></script>
 </body>
-<script src="menuOrder.js"></script>
 </html>
