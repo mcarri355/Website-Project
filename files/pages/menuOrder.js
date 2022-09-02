@@ -24,7 +24,7 @@ function tortillaPick(){
 }
 
 function cheesePick(){
-    tortilla = prompt(`Pick your cheese.
+    cheese = prompt(`Pick your cheese.
     1. cheddar
     2. mozzarella
     3. american
@@ -47,7 +47,7 @@ function cheesePick(){
 }
 
 function meatPick(){
-    tortilla = prompt(`Pick your meat.
+    meat = prompt(`Pick your meat.
     1. chicken
     2. steak
     3. chorizo
@@ -70,7 +70,7 @@ function meatPick(){
 }
 
 function veggiePick(){
-    tortilla = prompt(`Pick your first vegetable.
+    veggie = prompt(`Pick your first vegetable.
     1. lettuce
     2. tomato
     3. olives
@@ -93,7 +93,7 @@ function veggiePick(){
 }
 
 function veggie2Pick(){
-    tortilla = prompt(`Pick your second vegetable.
+    veggie2 = prompt(`Pick your second vegetable.
     1. lettuce
     2. tomato
     3. olives
@@ -116,7 +116,7 @@ function veggie2Pick(){
 }
 
 function guacPick(){
-    tortilla = prompt(`Do you want guacamole?
+    guac = prompt(`Do you want guacamole?
     1. guacamole
     2. none`)
     if(guac == 1 ){
@@ -130,7 +130,7 @@ function guacPick(){
 }
 
 function saucePick(){
-    tortilla = prompt(`What sauce do you want?
+    sauce = prompt(`What sauce do you want?
     1. medium sauce
     2. mild sauce
     3. hot sauce
